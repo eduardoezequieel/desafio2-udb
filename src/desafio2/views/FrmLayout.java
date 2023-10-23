@@ -35,6 +35,7 @@ public class FrmLayout extends javax.swing.JFrame {
         
         setContent(materialPanel);
         setActiveButton(materialsBtn);
+        setCustomTitle("Mediateca | Materiales");
     }
     
     private void setContent(JPanel content) {
@@ -56,6 +57,10 @@ public class FrmLayout extends javax.swing.JFrame {
         allowedButtons.add(materialsBtn);
         allowedButtons.add(editorialBtn);
         allowedButtons.add(creatorsBtn);
+    }
+    
+    private void setCustomTitle(String title) {
+        titleLbl.setText(title);
     }
 
     /**
@@ -82,6 +87,7 @@ public class FrmLayout extends javax.swing.JFrame {
         actionBar = new javax.swing.JPanel();
         closeBtn = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        titleLbl = new javax.swing.JLabel();
         contentPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -208,6 +214,11 @@ public class FrmLayout extends javax.swing.JFrame {
 
         actionBar.add(closeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 0, 30, 30));
 
+        titleLbl.setBackground(new java.awt.Color(0, 0, 0));
+        titleLbl.setForeground(new java.awt.Color(0, 0, 0));
+        titleLbl.setText("Title");
+        actionBar.add(titleLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -4, 1000, 40));
+
         bg.add(actionBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 1100, 30));
 
         contentPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -265,16 +276,19 @@ public class FrmLayout extends javax.swing.JFrame {
     private void materialsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_materialsBtnMouseClicked
         setContent(materialPanel);
         setActiveButton(materialsBtn);
+        setCustomTitle("Mediateca | Materiales");
     }//GEN-LAST:event_materialsBtnMouseClicked
 
     private void creatorsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creatorsBtnMouseClicked
         setContent(authorsPanel);
         setActiveButton(creatorsBtn);
+        setCustomTitle("Mediateca | Creadores");
     }//GEN-LAST:event_creatorsBtnMouseClicked
 
     private void editorialBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editorialBtnMouseClicked
         setContent(editorialsPanel);
         setActiveButton(editorialBtn);
+        setCustomTitle("Mediateca | Editoriales");
     }//GEN-LAST:event_editorialBtnMouseClicked
 
     /**
@@ -329,5 +343,6 @@ public class FrmLayout extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel materialsBtn;
     private javax.swing.JPanel sidebar;
+    private javax.swing.JLabel titleLbl;
     // End of variables declaration//GEN-END:variables
 }
