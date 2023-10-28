@@ -5,17 +5,28 @@
  */
 package desafio2.views;
 
+import desafio2.controllers.CtrlEditorials;
+import desafio2.models.Editorial;
+import java.util.List;
+
 /**
  *
  * @author Eduardo
  */
 public class FrmEditorials extends javax.swing.JPanel {
-
+    private CtrlEditorials controller;
+    private List<Editorial> editorials;
     /**
      * Creates new form FrmEditorials
      */
     public FrmEditorials() {
         initComponents();
+        initData();
+    }
+    
+    private void initData() {
+        controller = new CtrlEditorials();
+        editorials = controller.getEditorials();
     }
 
     /**
@@ -27,19 +38,63 @@ public class FrmEditorials extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        EditorialTbl = new javax.swing.JTable();
+        jTextField1 = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Editorials page");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, -1));
+        EditorialTbl.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Id", "Nombre"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        EditorialTbl.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                EditorialTblComponentShown(evt);
+            }
+        });
+        jScrollPane1.setViewportView(EditorialTbl);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 520, 660));
+
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField1.setToolTipText("test");
+        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        jTextField1.setSelectionColor(new java.awt.Color(0, 153, 255));
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 120, 30));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void EditorialTblComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_EditorialTblComponentShown
+
+    }//GEN-LAST:event_EditorialTblComponentShown
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTable EditorialTbl;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

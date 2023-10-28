@@ -97,7 +97,6 @@ public class FrmLayout extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1280, 720));
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
@@ -128,8 +127,6 @@ public class FrmLayout extends javax.swing.JFrame {
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desafio2/resources/materials.png"))); // NOI18N
-        jLabel3.setMaximumSize(new java.awt.Dimension(30, 30));
-        jLabel3.setMinimumSize(new java.awt.Dimension(30, 30));
         materialsBtn.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, 60, 50));
 
         sidebar.add(materialsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 180, 40));
@@ -194,6 +191,7 @@ public class FrmLayout extends javax.swing.JFrame {
         bg.add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 720));
 
         actionBar.setBackground(new java.awt.Color(230, 230, 230));
+        actionBar.setPreferredSize(new java.awt.Dimension(1100, 35));
         actionBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         closeBtn.setBackground(new java.awt.Color(255, 0, 102));
