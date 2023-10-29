@@ -20,9 +20,6 @@ import javax.swing.JPanel;
  * @author Eduardo
  */
 public class FrmLayout extends javax.swing.JFrame {
-    private FrmMaterials materialPanel = new FrmMaterials();
-    private FrmAuthors authorsPanel = new FrmAuthors();
-    private FrmEditorials editorialsPanel = new FrmEditorials();
     private Color pressedButtonColor = new Color(0, 107, 178);
     private Color defaultButtonColor = new Color(0, 153, 255);
     private JComponent selectedButton;
@@ -32,6 +29,8 @@ public class FrmLayout extends javax.swing.JFrame {
         initComponents();
         initAllowedButtons();
         this.setLocationRelativeTo(null);
+        
+        FrmMaterials materialPanel = new FrmMaterials();
         
         setContent(materialPanel);
         setActiveButton(materialsBtn);
@@ -272,18 +271,21 @@ public class FrmLayout extends javax.swing.JFrame {
     }//GEN-LAST:event_editorialBtnMouseExited
 
     private void materialsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_materialsBtnMouseClicked
+        FrmMaterials materialPanel = new FrmMaterials();
         setContent(materialPanel);
         setActiveButton(materialsBtn);
         setCustomTitle("Mediateca | Materiales");
     }//GEN-LAST:event_materialsBtnMouseClicked
 
     private void creatorsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creatorsBtnMouseClicked
+        FrmAuthors authorsPanel = new FrmAuthors();
         setContent(authorsPanel);
         setActiveButton(creatorsBtn);
         setCustomTitle("Mediateca | Creadores");
     }//GEN-LAST:event_creatorsBtnMouseClicked
 
     private void editorialBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editorialBtnMouseClicked
+        FrmEditorials editorialsPanel = new FrmEditorials();
         setContent(editorialsPanel);
         setActiveButton(editorialBtn);
         setCustomTitle("Mediateca | Editoriales");

@@ -6,27 +6,53 @@
 package desafio2.views;
 
 import desafio2.controllers.CtrlEditorials;
+import desafio2.helpers.Validators;
 import desafio2.models.Editorial;
 import java.util.List;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
-/**
- *
- * @author Eduardo
- */
 public class FrmEditorials extends javax.swing.JPanel {
     private CtrlEditorials controller;
     private List<Editorial> editorials;
-    /**
-     * Creates new form FrmEditorials
-     */
+    private Editorial selectedEditorial = null;
+   
     public FrmEditorials() {
         initComponents();
         initData();
+        getTableData();
     }
     
     private void initData() {
         controller = new CtrlEditorials();
         editorials = controller.getEditorials();
+        
+        editorialTxt.setText("");
+        addBtn.setEnabled(true);
+        updateBtn.setEnabled(false);
+        deleteBtn.setEnabled(false);
+    }
+    
+    private void getTableData() {
+        DefaultTableModel tableModel = new DefaultTableModel();
+        
+        tableModel.addColumn("Id");
+        tableModel.addColumn("Editorial");
+        
+        for (int i = 0; i < editorials.size(); i++) {
+            Editorial editorial = editorials.get(i);
+            tableModel.addRow(new Object[]{editorial.getId(), editorial.getEditorial()});
+        }
+        
+        editorialTbl.setModel(tableModel);
+        DefaultTableCellRenderer cellRenderer = new DefaultTableCellRenderer();
+        cellRenderer.setHorizontalAlignment(JLabel.CENTER);
+        editorialTbl.getColumnModel().getColumn(0).setPreferredWidth(1);
+        editorialTbl.getColumnModel().getColumn(0).setCellRenderer(cellRenderer);
     }
 
     /**
@@ -39,62 +65,260 @@ public class FrmEditorials extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        EditorialTbl = new javax.swing.JTable();
-        jTextField1 = new javax.swing.JTextField();
+        editorialTbl = new javax.swing.JTable();
+        editorialTxt = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        deleteBtn = new javax.swing.JButton();
+        addBtn = new javax.swing.JButton();
+        updateBtn = new javax.swing.JButton();
+        searchTxt = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        clearBtn = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
+        addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                formFocusGained(evt);
+            }
+        });
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        EditorialTbl.setModel(new javax.swing.table.DefaultTableModel(
+        editorialTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
-                "Id", "Nombre"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false
-            };
 
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
             }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+        ));
+        editorialTbl.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                editorialTblMouseClicked(evt);
             }
         });
-        EditorialTbl.addComponentListener(new java.awt.event.ComponentAdapter() {
+        editorialTbl.addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
-                EditorialTblComponentShown(evt);
+                editorialTblComponentShown(evt);
             }
         });
-        jScrollPane1.setViewportView(EditorialTbl);
+        jScrollPane1.setViewportView(editorialTbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 520, 660));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, 520, 580));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setToolTipText("test");
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jTextField1.setSelectionColor(new java.awt.Color(0, 153, 255));
-        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 120, 30));
+        editorialTxt.setBackground(new java.awt.Color(255, 255, 255));
+        editorialTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        editorialTxt.setToolTipText("Coloca el nombre de la editorial.");
+        editorialTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        editorialTxt.setSelectionColor(new java.awt.Color(0, 153, 255));
+        editorialTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                editorialTxtKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                editorialTxtKeyTyped(evt);
+            }
+        });
+        add(editorialTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 450, 30));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel1.setText("Buscar:");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, -1, -1));
+
+        deleteBtn.setBackground(new java.awt.Color(0, 153, 255));
+        deleteBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        deleteBtn.setForeground(new java.awt.Color(255, 255, 255));
+        deleteBtn.setText("Eliminar");
+        deleteBtn.setBorder(null);
+        deleteBtn.setBorderPainted(false);
+        deleteBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        deleteBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteBtnActionPerformed(evt);
+            }
+        });
+        add(deleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 100, 50));
+
+        addBtn.setBackground(new java.awt.Color(0, 153, 255));
+        addBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        addBtn.setForeground(new java.awt.Color(255, 255, 255));
+        addBtn.setText("Agregar");
+        addBtn.setBorder(null);
+        addBtn.setBorderPainted(false);
+        addBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        addBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBtnActionPerformed(evt);
+            }
+        });
+        add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 100, 50));
+
+        updateBtn.setBackground(new java.awt.Color(0, 153, 255));
+        updateBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        updateBtn.setForeground(new java.awt.Color(255, 255, 255));
+        updateBtn.setText("Actualizar");
+        updateBtn.setBorder(null);
+        updateBtn.setBorderPainted(false);
+        updateBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        updateBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateBtnActionPerformed(evt);
+            }
+        });
+        add(updateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 100, 50));
+
+        searchTxt.setBackground(new java.awt.Color(255, 255, 255));
+        searchTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        searchTxt.setToolTipText("Coloca el nombre de la editorial.");
+        searchTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        searchTxt.setSelectionColor(new java.awt.Color(0, 153, 255));
+        searchTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchTxtKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                searchTxtKeyTyped(evt);
+            }
+        });
+        add(searchTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 40, 520, 30));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel2.setText("Nombre de la editorial:");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+
+        clearBtn.setBackground(new java.awt.Color(0, 153, 255));
+        clearBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        clearBtn.setForeground(new java.awt.Color(255, 255, 255));
+        clearBtn.setText("Limpiar");
+        clearBtn.setBorder(null);
+        clearBtn.setBorderPainted(false);
+        clearBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        clearBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearBtnActionPerformed(evt);
+            }
+        });
+        add(clearBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, 100, 50));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void EditorialTblComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_EditorialTblComponentShown
+    private void editorialTblComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_editorialTblComponentShown
 
-    }//GEN-LAST:event_EditorialTblComponentShown
+    }//GEN-LAST:event_editorialTblComponentShown
+
+    private void editorialTxtKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_editorialTxtKeyTyped
+        
+    }//GEN-LAST:event_editorialTxtKeyTyped
+
+    private void editorialTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editorialTblMouseClicked
+        selectedEditorial = editorials.get(editorialTbl.getSelectedRow());
+        
+        addBtn.setEnabled(false);
+        updateBtn.setEnabled(true);
+        deleteBtn.setEnabled(true);
+        
+        editorialTxt.setText(selectedEditorial.getEditorial());
+    }//GEN-LAST:event_editorialTblMouseClicked
+
+    private void editorialTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_editorialTxtKeyReleased
+        String text = editorialTxt.getText();
+        boolean validLength = Validators.checkTextLength(text, 100);
+        boolean validFormat = Validators.matchesRegex(text, Validators.getNoMaliciousCharactersRegex());
+        
+        if(!validLength) editorialTxt.setText(text.substring(0, 100));
+        if (!validFormat) editorialTxt.setText(text.substring(0, text.length() - 1));
+    }//GEN-LAST:event_editorialTxtKeyReleased
+
+    private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
+        int response = JOptionPane.showConfirmDialog(null, 
+                "¿Estás seguro de que deseas eliminar este registro? Todos los datos relacionados a el se seran eliminados. Este cambio es irreversible", 
+                "Confirmación", 
+                JOptionPane.YES_NO_OPTION, 
+                JOptionPane.WARNING_MESSAGE);
+        
+        if (response == JOptionPane.YES_OPTION) {
+            int id = selectedEditorial.getId();
+            boolean relatedMaterialsWereDeleted = controller.deleteRelatedMaterials(id);
+            
+            if(relatedMaterialsWereDeleted) {
+                boolean editorialWasDeleted = controller.deleteEditorial(id);
+                
+                if(editorialWasDeleted) {
+                    initData();
+                    getTableData();
+                }
+            }
+        }
+    }//GEN-LAST:event_deleteBtnActionPerformed
+
+    private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
+        String editorial = editorialTxt.getText().trim();
+        
+        if(editorial.length() == 0) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+            return;
+        }
+        
+        boolean ok = controller.createEditorial(editorialTxt.getText());
+        if(ok) {
+            initData();
+            getTableData();
+        };
+    }//GEN-LAST:event_addBtnActionPerformed
+
+    private void updateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBtnActionPerformed
+        String editorial = editorialTxt.getText().trim();
+        
+        if(editorial.length() == 0) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+            return;
+        }
+        
+        int id = selectedEditorial.getId();
+        boolean ok = controller.updateEditorial(editorial, id);
+        if(ok) {
+            initData();
+            getTableData();
+        };
+    }//GEN-LAST:event_updateBtnActionPerformed
+
+    private void searchTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchTxtKeyReleased
+        DefaultTableModel model = (DefaultTableModel) editorialTbl.getModel();
+        TableRowSorter<DefaultTableModel> rowSorter = new TableRowSorter<DefaultTableModel>(model);
+        
+        editorialTbl.setRowSorter(rowSorter);
+        rowSorter.setRowFilter(RowFilter.regexFilter(searchTxt.getText()));
+    }//GEN-LAST:event_searchTxtKeyReleased
+
+    private void searchTxtKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchTxtKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchTxtKeyTyped
+
+    private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
+        editorialTxt.setText("");
+        addBtn.setEnabled(true);
+        updateBtn.setEnabled(false);
+        deleteBtn.setEnabled(false);
+    }//GEN-LAST:event_clearBtnActionPerformed
+
+    private void formFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_formFocusGained
+
+    }//GEN-LAST:event_formFocusGained
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable EditorialTbl;
+    private javax.swing.JButton addBtn;
+    private javax.swing.JButton clearBtn;
+    private javax.swing.JButton deleteBtn;
+    private javax.swing.JTable editorialTbl;
+    private javax.swing.JTextField editorialTxt;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField searchTxt;
+    private javax.swing.JButton updateBtn;
     // End of variables declaration//GEN-END:variables
 }
