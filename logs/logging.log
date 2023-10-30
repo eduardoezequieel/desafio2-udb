@@ -970,3 +970,364 @@
 2023-10-29 23:02:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
 2023-10-29 23:02:16 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código LIB00007.
 2023-10-29 23:02:16 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:04:36 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:01 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:01 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:05:03 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:04 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:04 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:05:05 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:05 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:05 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:05:08 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:14 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:05:14 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:05:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:17 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:05:17 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:05:17 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:18 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:05:18 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:05:18 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:20 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:05:20 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:05:20 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:21 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:05:21 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:05:22 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:32 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:05:32 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:05:32 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:33 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:05:33 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:05:33 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:33 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:05:33 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:05:33 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:34 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:05:34 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:05:34 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:44 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 23:05:44 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:47 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:05:47 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:05:47 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:51 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:05:51 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:05:51 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:53 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 23:05:54 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:55 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:05:55 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:05:55 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:05:57 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:05:57 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:05:57 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:06:02 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:06:02 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:06:02 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:06:03 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:06:03 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:06:03 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:06:09 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código DVD00009.
+2023-10-29 23:06:09 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:06:31 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:13 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:16 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:07:16 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:07:16 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:30 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:31 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:07:31 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:07:31 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:33 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código DVD00010.
+2023-10-29 23:07:33 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:35 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:07:35 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:07:35 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:39 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:07:39 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:07:39 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:07:41 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código REV59823.
+2023-10-29 23:07:41 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:07 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:24 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:24 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:08:35 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:40 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:49 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:08:49 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:08:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:52 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:08:52 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:08:52 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:52 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:08:52 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:08:52 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:08:59 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:08:59 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:08:59 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:04 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:09:04 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:09:04 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:05 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:09:06 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:09:06 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:07 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:09:07 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:09:07 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:08 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:09:08 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:09:08 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:25 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:09:25 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:09:25 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:25 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:09:25 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:09:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:48 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:09:48 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:09:48 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:09:57 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 23:09:59 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:01 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:10:01 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:10:01 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:09 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:10:09 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:10:09 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:10 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:10:10 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:10:10 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:12 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:10:12 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:10:12 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:17 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:10:17 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:10:17 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:22 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código REV00259.
+2023-10-29 23:10:22 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:37 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:10:37 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:10:37 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:10:39 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código CDA00004.
+2023-10-29 23:10:39 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:17 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:18 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:18 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:12:19 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:21 INFO  CtrlEditorials:97 - INFO: Se creo la editorial correctamente.
+2023-10-29 23:12:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:24 INFO  CtrlEditorials:122 - INFO: Se actualizo la editorial con id 17 correctamente.
+2023-10-29 23:12:24 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:27 INFO  CtrlEditorials:147 - INFO: Se eliminaron los materiales relacionados a la editorial con id 17.
+2023-10-29 23:12:27 INFO  CtrlEditorials:172 - INFO: Se elimino la editorial con id 17.
+2023-10-29 23:12:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:29 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:31 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:12:31 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:12:31 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:31 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:12:31 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:12:31 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:34 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:12:34 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:12:34 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:39 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 23:12:40 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:42 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:12:42 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:12:42 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:50 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 23:12:51 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:51 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:12:51 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:12:51 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:12:52 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:12:52 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:12:52 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:01 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código DVD00006.
+2023-10-29 23:13:01 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:03 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:13:03 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:13:03 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:05 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:13:05 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:13:05 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:06 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:13:06 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:13:06 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:13 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:13:13 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:13:13 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:15 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:13:15 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:13:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:15 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:13:15 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:13:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:16 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 23:13:18 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:18 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:13:18 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:13:18 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:22 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 23:13:23 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:24 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:13:24 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:13:24 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:26 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código REV00260.
+2023-10-29 23:13:26 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:41 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:41 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:13:41 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:41 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:13:41 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:13:42 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:16 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:16 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:14:22 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:26 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:33 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:14:33 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:14:33 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:35 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:14:35 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:14:35 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:36 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:14:36 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:14:36 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:37 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:14:37 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:14:37 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:49 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:49 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:14:54 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:14:54 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:02 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:15:02 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:04 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:15:04 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:05 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:15:05 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:07 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:15:07 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:08 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:15:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:16 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:15:16 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:19 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:15:19 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:45 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 23:15:45 INFO  CtrlDVDs:107 - INFO: Se creo el DVD correctamente.
+2023-10-29 23:15:45 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:15:52 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:15:52 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:15:52 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:07 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 23:16:08 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:10 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:16:10 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:16:10 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:13 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:16:13 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:16:13 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:14 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:16:14 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:16:14 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:17 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código DVD00009.
+2023-10-29 23:16:17 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:22 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:22 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:16:30 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:31 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:31 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:16:32 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:34 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:34 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:16:40 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:43 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:44 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:44 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:16:45 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:46 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:16:46 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:16:46 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:51 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:16:51 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:17:26 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:17:45 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:17:45 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:17:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:17:47 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:17:47 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:17:51 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:17:58 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:18:04 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:18:04 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:18:04 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:18:09 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:18:09 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:18:09 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:18:45 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:18:45 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:18:47 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:18:47 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:18:48 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 23:18:48 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:18:50 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:18:50 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:14 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 23:19:14 INFO  CtrlDVDs:107 - INFO: Se creo el DVD correctamente.
+2023-10-29 23:19:14 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:16 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:19:16 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:19:16 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:28 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 23:19:29 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:31 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:19:31 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:19:31 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:33 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:19:33 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:19:33 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:34 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:19:34 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:19:34 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:42 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código DVD00009.
+2023-10-29 23:19:42 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:19:46 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:19:46 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:01 INFO  CtrlAuthors:204 - INFO: Se creo el autor correctamente.
+2023-10-29 23:20:01 INFO  CtrlAuthors:143 - INFO: El registro se obtuvo correctamente.
+2023-10-29 23:20:01 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 23:20:01 INFO  CtrlDVDs:107 - INFO: Se creo el DVD correctamente.
+2023-10-29 23:20:01 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:03 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:20:03 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:20:03 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:11 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:11 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:20:12 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:15 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:15 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:20:25 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:26 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:26 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:20:32 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:32 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:20:44 INFO  CtrlAuthors:258 - INFO: Se eliminaron los materiales relacionados al creador con id 24.
+2023-10-29 23:20:44 INFO  CtrlAuthors:283 - INFO: Se elimino el creador con id 24.
+2023-10-29 23:20:44 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:44 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 23:20:47 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:49 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 23:20:49 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 23:20:49 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:20:59 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:20:59 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:21:13 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:21:13 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:21:25 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:21:27 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:21:27 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
