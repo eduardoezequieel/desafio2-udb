@@ -1,19 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package desafio2.views;
 
-import desafio2.controllers.CtrlEditorials;
 import desafio2.controllers.CtrlMaterials;
-import desafio2.helpers.Validators;
-import desafio2.models.Editorial;
 import desafio2.models.Material;
 import java.awt.BorderLayout;
 import java.util.List;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -24,11 +15,14 @@ public class FrmMaterials extends javax.swing.JPanel {
     private CtrlMaterials controller;
     private List<Material> materials;
     private Material selectedMaterial = null;
+    private JPanel layoutPanel;
    
-    public FrmMaterials() {
+    public FrmMaterials(JPanel contentPanel) {
         initComponents();
         initData();
         getTableData();
+        
+        layoutPanel = contentPanel;
     }
     
     private void initData() {
@@ -48,6 +42,13 @@ public class FrmMaterials extends javax.swing.JPanel {
         contentPanel.add(content, BorderLayout.CENTER);
         contentPanel.revalidate();
         contentPanel.repaint();
+    }
+    
+    private void setLayoutContent(JPanel content) {
+        layoutPanel.removeAll();
+        layoutPanel.add(content, BorderLayout.CENTER);
+        layoutPanel.revalidate();
+        layoutPanel.repaint();
     }
     
     private void getTableData() {
@@ -251,18 +252,8 @@ public class FrmMaterials extends javax.swing.JPanel {
     }//GEN-LAST:event_deleteBtnActionPerformed
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
-        /*String editorial = editorialTxt.getText().trim();
-        
-        if(editorial.length() == 0) {
-            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
-            return;
-        }
-        
-        boolean ok = controller.createEditorial(editorialTxt.getText());
-        if(ok) {
-            initData();
-            getTableData();
-        };*/
+        FrmSelectMaterialType form = new FrmSelectMaterialType(layoutPanel);
+        setLayoutContent(form);
     }//GEN-LAST:event_addBtnActionPerformed
 
     private void updateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBtnActionPerformed

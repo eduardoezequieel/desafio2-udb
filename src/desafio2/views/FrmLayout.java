@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package desafio2.views;
 
 import java.awt.BorderLayout;
@@ -15,10 +10,6 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Eduardo
- */
 public class FrmLayout extends javax.swing.JFrame {
     private Color pressedButtonColor = new Color(0, 107, 178);
     private Color defaultButtonColor = new Color(0, 153, 255);
@@ -30,7 +21,7 @@ public class FrmLayout extends javax.swing.JFrame {
         initAllowedButtons();
         this.setLocationRelativeTo(null);
         
-        FrmMaterials materialPanel = new FrmMaterials();
+        FrmMaterials materialPanel = new FrmMaterials(contentPanel);
         
         setContent(materialPanel);
         setActiveButton(materialsBtn);
@@ -271,7 +262,7 @@ public class FrmLayout extends javax.swing.JFrame {
     }//GEN-LAST:event_editorialBtnMouseExited
 
     private void materialsBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_materialsBtnMouseClicked
-        FrmMaterials materialPanel = new FrmMaterials();
+        FrmMaterials materialPanel = new FrmMaterials(contentPanel);
         setContent(materialPanel);
         setActiveButton(materialsBtn);
         setCustomTitle("Mediateca | Materiales");

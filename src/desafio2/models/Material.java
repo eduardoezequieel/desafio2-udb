@@ -4,7 +4,25 @@ public class Material {
     private String codigo;
     private String titulo;
     private String tipoMaterial;
+    private int tipoMaterialId;
+    private int categoriaMaterialId;
     private String categoriaMaterial;
+
+    public int getTipoMaterialId() {
+        return tipoMaterialId;
+    }
+
+    public void setTipoMaterialId(int tipoMaterialId) {
+        this.tipoMaterialId = tipoMaterialId;
+    }
+
+    public int getCategoriaMaterialId() {
+        return categoriaMaterialId;
+    }
+
+    public void setCategoriaMaterialId(int categoriaMaterialId) {
+        this.categoriaMaterialId = categoriaMaterialId;
+    }
 
     public String getCodigo() {
         return codigo;

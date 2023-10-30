@@ -3,14 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/models/Editorial.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmEditorials.java</file>
             <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/controllers/CtrlEditorials.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/Desafio2.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/helpers/DatabaseConnection.java</file>
-            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmMaterials.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/models/Material.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmEditDVDs.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/models/Book.java</file>
             <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmAuthors.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/controllers/CtrlAuthors.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmWelcome.java</file>
             <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmLayout.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/controllers/CtrlMaterials.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmEditMagazine.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmMaterials.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmEditCDs.java</file>
+            <file>file:/C:/Users/Eduardo/Documents/NetBeansProjects/Desafio2/src/desafio2/views/FrmEditBooks.java</file>
         </group>
     </open-files>
 </project-private>

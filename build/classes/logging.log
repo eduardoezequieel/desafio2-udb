@@ -46,3 +46,372 @@
 2023-10-28 21:32:06 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
 2023-10-28 21:36:16 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
 2023-10-28 21:38:35 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:35:00 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:43:36 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:43:40 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:43:45 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:46:31 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:47:39 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:47:42 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:47:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:47:49 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:47:49 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:48:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:49:01 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:53:09 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:55:59 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 09:56:35 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 10:00:21 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 10:07:18 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 10:08:26 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 10:09:04 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 10:11:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 11:25:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:39:08 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:39:25 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:39:50 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:41:45 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:42:23 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:42:33 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:46:09 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:55:28 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:55:30 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 12:55:30 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:58:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 12:59:00 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 12:59:00 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:02:38 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:02:42 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 13:02:42 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:05:42 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:05:44 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 13:05:44 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:06:44 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:06:44 INFO  CtrlAuthors:78 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 13:06:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:06:47 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:06:47 INFO  CtrlAuthors:78 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 13:06:50 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:06:56 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 13:06:56 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:10:00 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:10:06 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:10:08 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 13:10:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:10:39 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:10:39 INFO  CtrlAuthors:78 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 13:10:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 13:10:57 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 13:10:57 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:22:08 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:22:10 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:22:10 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:22:28 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:22:32 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:22:32 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:23:13 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:23:15 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:23:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:34:24 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:34:25 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:34:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:34:25 INFO  GenerateCode:64 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:34:52 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:34:54 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:34:54 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:34:54 INFO  GenerateCode:67 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:36:05 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:36:06 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:36:06 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:36:06 INFO  GenerateCode:67 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:38:51 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:38:53 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:38:53 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:38:53 INFO  GenerateCode:67 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:39:40 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:39:42 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:39:42 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:39:42 INFO  GenerateCode:66 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:40:32 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:40:34 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:40:34 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:40:34 INFO  GenerateCode:67 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:43:01 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:43:03 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:43:03 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:43:03 INFO  GenerateCode:67 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:43:13 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:43:14 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:43:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:43:14 INFO  GenerateCode:67 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:43:56 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:43:57 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:43:57 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:46:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:46:50 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:46:50 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:46:52 ERROR GenerateCode:23 - ERROR: Tipo de material desconocido
+2023-10-29 14:46:52 INFO  GenerateCode:68 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 14:47:08 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:47:10 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:47:10 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:47:12 ERROR GenerateCode:23 - ERROR: Tipo de material desconocido
+2023-10-29 14:47:14 ERROR GenerateCode:23 - ERROR: Tipo de material desconocido
+2023-10-29 14:59:05 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 14:59:07 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 14:59:07 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:21:26 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:21:28 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:21:28 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:22:14 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:22:19 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:22:19 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:23:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:23:49 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:23:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:25:26 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:25:30 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:25:30 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:26:18 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:26:19 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:26:19 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:27:04 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:27:06 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:27:06 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:27:51 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:27:52 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:27:52 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:28:37 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:28:39 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:28:39 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:29:08 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:29:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:29:23 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:29:25 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:29:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:29:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:29:46 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:29:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:30:06 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:30:07 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:30:42 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:31:47 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:31:51 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:31:51 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:31:55 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:31:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:32:08 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:32:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:32:16 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:36:19 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:36:19 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:37:09 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:37:11 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:37:11 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:45:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:45:49 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:45:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:46:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:46:59 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:46:59 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:49:38 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:49:40 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:49:40 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:49:40 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:49:42 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:49:42 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:13 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:13 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:50:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:16 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:16 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:50:16 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:17 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:17 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:50:17 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:50:19 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:50:19 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:51:49 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:51:53 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:51:53 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:53:14 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:53:15 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:53:15 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 15:53:19 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:53:21 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:53:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:57:52 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:57:53 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 15:57:53 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 15:58:01 ERROR GenerateCode:22 - ERROR: Tipo de material desconocido
+2023-10-29 16:01:45 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:01:47 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:01:47 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:01:54 ERROR GenerateCode:22 - ERROR: Tipo de material desconocido
+2023-10-29 16:02:05 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:06 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:06 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 16:02:07 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:08 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:02:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:19 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:02:34 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:37 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:37 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 16:02:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:02:45 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:02:45 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:03:11 INFO  CtrlAuthors:136 - INFO: Se creo el autor correctamente.
+2023-10-29 16:03:11 INFO  CtrlAuthors:75 - INFO: El registro se obtuvo correctamente.
+2023-10-29 16:03:11 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:03:16 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:03:18 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:03:18 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 16:03:25 INFO  CtrlAuthors:190 - INFO: Se eliminaron los materiales relacionados al creador con id 21.
+2023-10-29 16:03:25 INFO  CtrlAuthors:215 - INFO: Se elimino el creador con id 21.
+2023-10-29 16:03:25 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:03:25 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 16:03:34 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:03:38 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:03:38 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:04:47 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:04:49 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:04:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:05:18 INFO  CtrlEditorials:97 - INFO: Se creo la editorial correctamente.
+2023-10-29 16:05:18 ERROR CtrlEditorials:74 - ERROR: Column 'nombre' not found.
+2023-10-29 16:05:21 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:05:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:05:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:05:49 INFO  CtrlEditorials:147 - INFO: Se eliminaron los materiales relacionados a la editorial con id 18.
+2023-10-29 16:05:49 INFO  CtrlEditorials:172 - INFO: Se elimino la editorial con id 18.
+2023-10-29 16:05:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:05:50 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:08:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:08:46 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:08:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:09:03 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:09:10 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:09:18 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:09:34 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:09:38 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:09:38 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:09:48 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:30:11 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:30:15 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:30:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:30:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:30:45 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:30:45 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:33:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:34:08 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:34:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:37:40 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:37:42 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:37:42 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:40:22 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:40:25 INFO  CtrlBooks:42 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 16:40:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 16:40:48 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 16:47:06 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:01:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:01:51 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:01:51 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:02:13 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 17:02:13 ERROR CtrlBooks:78 - ERROR: Column count doesn't match value count at row 1
+2023-10-29 17:04:50 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:05:08 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:05:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:05:26 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 17:05:26 INFO  CtrlBooks:77 - INFO: Se creo la editorial correctamente.
+2023-10-29 17:05:28 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:05:38 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:05:38 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 17:05:39 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:07:37 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:08:26 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:08:26 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:08:58 INFO  CtrlEditorials:97 - INFO: Se creo la editorial correctamente.
+2023-10-29 17:08:58 INFO  CtrlEditorials:72 - INFO: El registro se obtuvo correctamente.
+2023-10-29 17:08:58 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 17:08:58 INFO  CtrlBooks:77 - INFO: Se creo la editorial correctamente.
+2023-10-29 17:08:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:09:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:09:30 INFO  CtrlEditorials:147 - INFO: Se eliminaron los materiales relacionados a la editorial con id 19.
+2023-10-29 17:09:31 INFO  CtrlEditorials:172 - INFO: Se elimino la editorial con id 19.
+2023-10-29 17:09:31 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:09:33 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:26:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:26:46 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:26:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:28:53 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:28:57 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:28:57 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:29:33 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:29:36 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:29:36 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:30:36 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:30:38 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:30:38 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:31:13 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:31:15 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:31:15 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 17:31:16 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:31:18 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 17:31:18 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:42:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 17:43:02 INFO  CtrlMagazines:41 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 17:43:02 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:02:57 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:03:00 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:03:00 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:03:28 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 18:03:28 ERROR CtrlMagazines:78 - ERROR: Data truncation: Incorrect date value: 'YYYY-MM-dd' for column `mediateca`.`material`.`fecha_publicacion` at row 1
+2023-10-29 18:04:41 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:04:43 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:04:43 INFO  CtrlAuthors:107 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 18:04:45 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:04:48 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:04:48 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:06:23 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:06:28 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:06:28 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:08:26 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:08:30 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:08:30 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:10:33 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:10:38 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:10:38 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:11:27 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:11:31 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:11:31 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:12:02 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:12:06 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:12:06 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:12:25 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 18:12:25 INFO  CtrlMagazines:76 - INFO: Se creo la revista correctamente.
+2023-10-29 18:12:25 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:20:17 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 18:20:21 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 18:20:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:07:27 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:07:29 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 20:07:29 ERROR CtrlAuthors:81 - ERROR: Column 'tipo_creador' not found.
+2023-10-29 20:08:22 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:08:24 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 20:08:24 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:08:58 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 20:08:58 INFO  CtrlCDs:74 - INFO: Se creo el libro correctamente.
+2023-10-29 20:08:58 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:09:17 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 20:09:17 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:09:41 INFO  CtrlAuthors:170 - INFO: Se creo el autor correctamente.
+2023-10-29 20:09:41 INFO  CtrlAuthors:109 - INFO: El registro se obtuvo correctamente.
+2023-10-29 20:09:41 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 20:09:41 INFO  CtrlCDs:74 - INFO: Se creo el libro correctamente.
+2023-10-29 20:09:41 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:09:52 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:09:52 INFO  CtrlAuthors:141 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 20:10:04 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:23:57 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:24:00 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 20:24:00 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.

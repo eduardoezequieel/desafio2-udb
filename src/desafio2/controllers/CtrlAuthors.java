@@ -52,6 +52,103 @@ public class CtrlAuthors {
         return authors;
     }
     
+    public List<Author> getArtists() {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        List<Author> authors = new ArrayList<>();
+        
+        try {
+            String sql = "SELECT * FROM creador WHERE tipo_creador_id = 2";
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) {            
+                Author author = new Author();
+                
+                author.setId(rs.getInt("id"));
+                author.setNombre(rs.getString("nombre"));
+                author.setTipoCreadorId(rs.getInt("tipo_creador_id"));
+                
+                authors.add(author);
+            }
+            
+            st.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: Los registros se obtuvieron correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener los datos. Contacta con el administrador.");
+        }
+        
+        
+        return authors;
+    }
+    
+    public List<Author> getDirectors() {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        List<Author> authors = new ArrayList<>();
+        
+        try {
+            String sql = "SELECT * FROM creador WHERE tipo_creador_id = 3";
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) {            
+                Author author = new Author();
+                
+                author.setId(rs.getInt("id"));
+                author.setNombre(rs.getString("nombre"));
+                author.setTipoCreadorId(rs.getInt("tipo_creador_id"));
+                
+                authors.add(author);
+            }
+            
+            st.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: Los registros se obtuvieron correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener los datos. Contacta con el administrador.");
+        }
+        
+        
+        return authors;
+    }
+    
+    public Author getLatestAuthor() {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        Author author = new Author();
+        
+        try {
+            String sql = "SELECT * FROM creador ORDER BY id DESC LIMIT 1";
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) {            
+                author.setId(rs.getInt("id"));
+                author.setNombre(rs.getString("nombre"));
+                author.setTipoCreadorId(rs.getInt("tipo_creador_id"));
+            }
+            
+            st.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: El registro se obtuvo correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener los datos. Contacta con el administrador.");
+        }
+        
+        return author;
+    }
+    
     public List<AuthorType> getAuthorTypes() {
         DatabaseConnection dbcn = new DatabaseConnection();
         Connection cn = dbcn.getConnection();

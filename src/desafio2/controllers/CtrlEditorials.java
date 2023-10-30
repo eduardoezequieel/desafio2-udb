@@ -50,6 +50,34 @@ public class CtrlEditorials {
         return editorials;
     }
     
+    public Editorial getLatestEditorial() {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        Editorial editorial = new Editorial();
+        
+        try {
+            String sql = "SELECT * FROM editorial ORDER BY id DESC LIMIT 1";
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) {            
+                editorial.setId(rs.getInt("id"));
+                editorial.setEditorial(rs.getString("editorial"));
+            }
+            
+            st.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: El registro se obtuvo correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener los datos. Contacta con el administrador.");
+        }
+        
+        return editorial;
+    }
+    
     public boolean createEditorial(String editorial) {
         DatabaseConnection dbcn = new DatabaseConnection();
         Connection cn = dbcn.getConnection();
