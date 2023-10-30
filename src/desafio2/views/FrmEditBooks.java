@@ -1,21 +1,85 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package desafio2.views;
 
-/**
- *
- * @author Eduardo
- */
-public class FrmEditBooks extends javax.swing.JPanel {
+import desafio2.controllers.CtrlAuthors;
+import desafio2.controllers.CtrlBooks;
+import desafio2.controllers.CtrlEditorials;
+import desafio2.helpers.Validators;
+import desafio2.models.Author;
+import desafio2.models.Book;
+import desafio2.models.Editorial;
+import java.util.List;
 
-    /**
-     * Creates new form FrmBooks
-     */
-    public FrmEditBooks() {
+public class FrmEditBooks extends javax.swing.JPanel {
+    private Book selectedBook;
+    private CtrlEditorials editorialsController;
+    private CtrlAuthors authorsController;
+    private CtrlBooks booksController;
+    private List<Author> authors;
+    private List<Editorial> editorials;
+    
+    public FrmEditBooks(Book book) {
         initComponents();
+        
+        selectedBook = book;
+        initData();
+        Validators.allowNumbers(numPaginasTxt, 5);
+        Validators.allowNumbers(anioPubTxt, 4);
+        Validators.allowNumbers(unidadesTxt, 5);
+        
+        booksController = new CtrlBooks();
+        editorialsController = new CtrlEditorials();
+        authorsController = new CtrlAuthors();
+        getAuthors();
+        getEditorials();
+    }
+    
+    private void initData() {
+        tituloTxt.setText(selectedBook.getTitulo());
+        numPaginasTxt.setText(String.valueOf(selectedBook.getNumPaginas()));
+        anioPubTxt.setText(String.valueOf(selectedBook.getAnioPublicacion()));
+        isbnTxt.setText(selectedBook.getIsbn());
+        unidadesTxt.setText(String.valueOf(selectedBook.getUnidades()));
+        codeLbl.setText(selectedBook.getCodigo());
+    }
+    
+    private void getAuthors() {
+        authors = booksController.getAuthors();
+        
+        authorCb.removeAllItems();
+        authorCb.addItem("Selecciona un autor");
+        
+        for (int i = 0; i < authors.size(); i++) {
+            Author author = authors.get(i);
+            
+            authorCb.addItem(author.getNombre());
+        }
+        
+        for (int i = 0; i < authors.size(); i++) {
+            if (selectedBook.getCreadorId() == authors.get(i).getId()) {
+                authorCb.setSelectedItem(authors.get(i).getNombre());
+                break;
+            }
+        }
+    }
+    
+     private void getEditorials() {
+        editorials = editorialsController.getEditorials();
+        
+        editorialCb.removeAllItems();
+        editorialCb.addItem("Selecciona una editorial");
+        
+        for (int i = 0; i < editorials.size(); i++) {
+            Editorial editorial = editorials.get(i);
+            
+            editorialCb.addItem(editorial.getEditorial());
+        }
+        
+        for (int i = 0; i < editorials.size(); i++) {
+            if (selectedBook.getEditorialId()== editorials.get(i).getId()) {
+                editorialCb.setSelectedItem(editorials.get(i).getEditorial());
+                break;
+            }
+        }
     }
 
     /**
@@ -29,19 +93,21 @@ public class FrmEditBooks extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        tituloTxt = new javax.swing.JTextField();
+        codeLbl = new javax.swing.JLabel();
+        authorCb = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        numPaginasTxt = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        editorialCb = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        anioPubTxt = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        unidadesTxt = new javax.swing.JTextField();
+        isbnTxt = new javax.swing.JFormattedTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 0, 0));
         setMaximumSize(new java.awt.Dimension(515, 585));
@@ -60,92 +126,189 @@ public class FrmEditBooks extends javax.swing.JPanel {
         jLabel1.setText("Autor:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 480, 30));
+        tituloTxt.setBackground(new java.awt.Color(255, 255, 255));
+        tituloTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        tituloTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        tituloTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tituloTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(tituloTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 480, 30));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setText("Título:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+        codeLbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        codeLbl.setForeground(new java.awt.Color(102, 102, 102));
+        codeLbl.setText("LIB00000");
+        jPanel1.add(codeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 480, 30));
+        authorCb.setBackground(new java.awt.Color(255, 255, 255));
+        authorCb.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        authorCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        authorCb.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        authorCb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                authorCbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(authorCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 480, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("Número de paginas:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 480, 30));
+        numPaginasTxt.setBackground(new java.awt.Color(255, 255, 255));
+        numPaginasTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        numPaginasTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        numPaginasTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                numPaginasTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(numPaginasTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 480, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("Editorial:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 480, 30));
+        editorialCb.setBackground(new java.awt.Color(255, 255, 255));
+        editorialCb.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        editorialCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        editorialCb.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        editorialCb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editorialCbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(editorialCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 480, 30));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 102, 102));
         jLabel5.setText("ISBN:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 480, 30));
-
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 102, 102));
         jLabel6.setText("Año de publicación:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 480, 30));
+        anioPubTxt.setBackground(new java.awt.Color(255, 255, 255));
+        anioPubTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        anioPubTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        anioPubTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                anioPubTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(anioPubTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 480, 30));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("Unidades disponibles:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, -1));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 480, 30));
+        unidadesTxt.setBackground(new java.awt.Color(255, 255, 255));
+        unidadesTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        unidadesTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        unidadesTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                unidadesTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(unidadesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 480, 30));
+
+        isbnTxt.setBackground(new java.awt.Color(255, 255, 255));
+        isbnTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        try {
+            isbnTxt.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###-#-####-#####-#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        isbnTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        isbnTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                isbnTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(isbnTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 480, 30));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel8.setText("Título:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel9.setText("Código:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tituloTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tituloTxtKeyReleased
+        String text = tituloTxt.getText();
+        boolean validLength = Validators.checkTextLength(text, 100);
+        boolean validFormat = Validators.matchesRegex(text, Validators.getNoMaliciousCharactersRegex());
+        
+        if(!validLength) tituloTxt.setText(text.substring(0, 100));
+        if (!validFormat) tituloTxt.setText(text.substring(0, text.length() - 1));
+        
+        selectedBook.setTitulo(tituloTxt.getText());
+    }//GEN-LAST:event_tituloTxtKeyReleased
+
+    private void numPaginasTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numPaginasTxtKeyReleased
+        selectedBook.setNumPaginas(Integer.parseInt(numPaginasTxt.getText()));
+    }//GEN-LAST:event_numPaginasTxtKeyReleased
+
+    private void anioPubTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_anioPubTxtKeyReleased
+        selectedBook.setAnioPublicacion(Integer.parseInt(anioPubTxt.getText()));
+    }//GEN-LAST:event_anioPubTxtKeyReleased
+
+    private void isbnTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_isbnTxtKeyReleased
+        selectedBook.setIsbn(isbnTxt.getText());
+    }//GEN-LAST:event_isbnTxtKeyReleased
+
+    private void unidadesTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_unidadesTxtKeyReleased
+        selectedBook.setUnidades(Integer.parseInt(unidadesTxt.getText()));
+    }//GEN-LAST:event_unidadesTxtKeyReleased
+
+    private void authorCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_authorCbActionPerformed
+        for (int i = 0; i < authors.size(); i++) {
+            if(authors.get(i).getNombre().equals(authorCb.getSelectedItem())) {
+                selectedBook.setCreadorId(authors.get(i).getId());
+                break;
+            }
+        }
+    }//GEN-LAST:event_authorCbActionPerformed
+
+    private void editorialCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editorialCbActionPerformed
+        for (int i = 0; i < editorials.size(); i++) {
+            if(editorials.get(i).getEditorial().equals(editorialCb.getSelectedItem())) {
+                selectedBook.setEditorialId(editorials.get(i).getId());
+                break;
+            }
+        }
+    }//GEN-LAST:event_editorialCbActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JTextField anioPubTxt;
+    private javax.swing.JComboBox<String> authorCb;
+    private javax.swing.JLabel codeLbl;
+    private javax.swing.JComboBox<String> editorialCb;
+    private javax.swing.JFormattedTextField isbnTxt;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField numPaginasTxt;
+    private javax.swing.JTextField tituloTxt;
+    private javax.swing.JTextField unidadesTxt;
     // End of variables declaration//GEN-END:variables
 }

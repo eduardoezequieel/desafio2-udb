@@ -1,22 +1,80 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package desafio2.views;
 
-/**
- *
- * @author Eduardo
- */
-public class FrmEditDVDs extends javax.swing.JPanel {
+import desafio2.controllers.CtrlAuthors;
+import desafio2.controllers.CtrlCDs;
+import desafio2.controllers.CtrlDVDs;
+import desafio2.helpers.Validators;
+import desafio2.models.Author;
+import desafio2.models.Cd;
+import desafio2.models.Dvd;
+import desafio2.models.Gender;
+import java.util.List;
 
-    /**
-     * Creates new form FrmBooks
-     */
-    public FrmEditDVDs() {
+public class FrmEditDVDs extends javax.swing.JPanel {
+    private Dvd selectedDvd;
+    private CtrlDVDs dvdsController;
+    private CtrlAuthors directorsController;    
+    private List<Gender> genders;
+    private List<Author> directors;
+    
+    public FrmEditDVDs(Dvd dvd) {
         initComponents();
+        
+        selectedDvd = dvd;
+        dvdsController = new CtrlDVDs();
+        directorsController = new CtrlAuthors();
+        
+        getGenders();
+        getDirectors();
+        initData();
     }
+    
+    private void initData() {
+        tituloTxt.setText(selectedDvd.getTitulo());
+        duracionTxt.setText(selectedDvd.getDuracion());
+        codeLbl.setText(selectedDvd.getCodigo());
+    }
+    
+    private void getGenders() {
+        genders = dvdsController.getGenders();
+        
+        genderCb.removeAllItems();
+        genderCb.addItem("Selecciona el género");
+        
+        for (int i = 0; i < genders.size(); i++) {
+            Gender gender = genders.get(i);
+            
+            genderCb.addItem(gender.getGenero());
+        }
+        
+        for (int i = 0; i < genders.size(); i++) {
+            if (selectedDvd.getGeneroId()== genders.get(i).getId()) {
+                genderCb.setSelectedItem(genders.get(i).getGenero());
+                break;
+            }
+        }
+    }
+    
+    private void getDirectors() {
+        directors = directorsController.getDirectors();
+        
+        directorCb.removeAllItems();
+        directorCb.addItem("Selecciona un director");
+        
+        for (int i = 0; i < directors.size(); i++) {
+            Author author = directors.get(i);
+            
+            directorCb.addItem(author.getNombre());
+        }
+        
+        for (int i = 0; i < directors.size(); i++) {
+            if (selectedDvd.getCreadorId()== directors.get(i).getId()) {
+                directorCb.setSelectedItem(directors.get(i).getNombre());
+                break;
+            }
+        }
+    }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -28,14 +86,16 @@ public class FrmEditDVDs extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        tituloTxt = new javax.swing.JTextField();
+        codeLbl = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        genderCb = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        duracionTxt = new javax.swing.JFormattedTextField();
+        jLabel12 = new javax.swing.JLabel();
+        directorCb = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(0, 0, 0));
         setMaximumSize(new java.awt.Dimension(515, 585));
@@ -49,61 +109,131 @@ public class FrmEditDVDs extends javax.swing.JPanel {
         jPanel1.setPreferredSize(new java.awt.Dimension(515, 585));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        tituloTxt.setBackground(new java.awt.Color(255, 255, 255));
+        tituloTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        tituloTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        tituloTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tituloTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(tituloTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 480, 30));
+
+        codeLbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        codeLbl.setForeground(new java.awt.Color(102, 102, 102));
+        codeLbl.setText("LIB00000");
+        jPanel1.add(codeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel8.setText("Título:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel9.setText("Código:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel1.setText("Director:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        jLabel1.setText("Género:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 50, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 480, 30));
+        genderCb.setBackground(new java.awt.Color(255, 255, 255));
+        genderCb.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        genderCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        genderCb.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        genderCb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genderCbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(genderCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 480, 30));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setText("Título:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel11.setText("Duración:");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 480, 30));
+        duracionTxt.setBackground(new java.awt.Color(255, 255, 255));
+        duracionTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        try {
+            duracionTxt.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##:##:##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        duracionTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        duracionTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                duracionTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(duracionTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 480, 30));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel3.setText("Género:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel12.setText("Director:");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 480, 30));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel6.setText("Duración:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
-
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 480, 30));
+        directorCb.setBackground(new java.awt.Color(255, 255, 255));
+        directorCb.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        directorCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        directorCb.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        directorCb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                directorCbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(directorCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 480, 30));
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tituloTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tituloTxtKeyReleased
+        String text = tituloTxt.getText();
+        boolean validLength = Validators.checkTextLength(text, 100);
+        boolean validFormat = Validators.matchesRegex(text, Validators.getNoMaliciousCharactersRegex());
+        
+        if(!validLength) tituloTxt.setText(text.substring(0, 100));
+        if (!validFormat) tituloTxt.setText(text.substring(0, text.length() - 1));
+        
+        selectedDvd.setTitulo(tituloTxt.getText());
+    }//GEN-LAST:event_tituloTxtKeyReleased
+
+    private void genderCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderCbActionPerformed
+        for (int i = 0; i < genders.size(); i++) {
+            if(genders.get(i).getGenero().equals(genderCb.getSelectedItem())) {
+                selectedDvd.setGeneroId(genders.get(i).getId());
+                break;
+            }
+        }
+    }//GEN-LAST:event_genderCbActionPerformed
+
+    private void duracionTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_duracionTxtKeyReleased
+        selectedDvd.setDuracion(duracionTxt.getText());
+    }//GEN-LAST:event_duracionTxtKeyReleased
+
+    private void directorCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_directorCbActionPerformed
+        for (int i = 0; i < directors.size(); i++) {
+            if(directors.get(i).getNombre().equals(directorCb.getSelectedItem())) {
+                selectedDvd.setCreadorId(directors.get(i).getId());
+                break;
+            }
+        }
+    }//GEN-LAST:event_directorCbActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JLabel codeLbl;
+    private javax.swing.JComboBox<String> directorCb;
+    private javax.swing.JFormattedTextField duracionTxt;
+    private javax.swing.JComboBox<String> genderCb;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField tituloTxt;
     // End of variables declaration//GEN-END:variables
 }

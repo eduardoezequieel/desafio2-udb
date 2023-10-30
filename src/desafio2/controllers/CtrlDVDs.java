@@ -49,6 +49,40 @@ public class CtrlDVDs {
         return genders;
     }
     
+    public Dvd getDvd(String code) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        Dvd dvd = new Dvd();
+        
+        try {
+            String sql = "SELECT codigo, titulo, creador_id, genero_id, duracion, tipo_material_id FROM material WHERE codigo = ?";
+            
+            PreparedStatement pst = cn.prepareStatement(sql);
+            pst.setString(1, code);
+            ResultSet rs = pst.executeQuery();
+            
+            while (rs.next()) {            
+                dvd.setCodigo(rs.getString("codigo"));
+                dvd.setTitulo(rs.getString("titulo"));
+                dvd.setCreadorId(rs.getInt("creador_id"));
+                dvd.setGeneroId(rs.getInt("genero_id"));
+                dvd.setDuracion(rs.getString("duracion"));
+                dvd.setTipoMaterialId(rs.getInt("tipo_material_id"));
+            }
+            
+            pst.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: El registro de CD se obtuvo correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener la revista. Contacta con el administrador.");
+        }
+        
+        return dvd;
+    }
+    
     public boolean createDvd(Dvd dvd) {
         DatabaseConnection dbcn = new DatabaseConnection();
         Connection cn = dbcn.getConnection();
@@ -74,6 +108,37 @@ public class CtrlDVDs {
         } catch (Exception e) {
             log.error("ERROR: " + e.getMessage());
             JOptionPane.showMessageDialog(null, "Sucedio un error al guardar el registro. Por favor contactar con el administrador.");
+        }
+        
+        return response;
+    }
+    
+    public boolean updateDvd(Dvd dvd) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        boolean response = false;
+        
+        try {
+            String sql = "UPDATE material SET titulo = ?, creador_id = ?, genero_id = ?, duracion = ?, tipo_material_id = ? WHERE codigo = ?";
+            
+            PreparedStatement pst = cn.prepareStatement(sql);
+            
+            pst.setString(1, dvd.getTitulo());
+            pst.setInt(2, dvd.getCreadorId());
+            pst.setInt(3, dvd.getGeneroId());
+            pst.setString(4, dvd.getDuracion());
+            pst.setInt(5, dvd.getTipoMaterialId());
+            pst.setString(6, dvd.getCodigo());
+            
+            if(!pst.execute()) response = true;
+            
+            pst.close();
+            cn.close();
+            
+            log.info("INFO: Se actualizó el DVD correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Sucedio un error al actualizar el registro. Por favor contactar con el administrador.");
         }
         
         return response;

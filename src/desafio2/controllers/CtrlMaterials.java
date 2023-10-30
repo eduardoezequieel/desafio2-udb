@@ -4,6 +4,7 @@ import desafio2.helpers.DatabaseConnection;
 import desafio2.models.Editorial;
 import desafio2.models.Material;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -53,5 +54,30 @@ public class CtrlMaterials {
         
         
         return materials;
+    }
+    
+    public boolean deleteMaterial (String code) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        boolean response = false;
+        
+        try {
+            String sql = "DELETE FROM material WHERE codigo = ?";
+            
+            PreparedStatement pst = cn.prepareStatement(sql);
+            pst.setString(1, code);
+            
+            if(!pst.execute()) response = true;
+            
+            pst.close();
+            cn.close();
+            
+            log.info("INFO: Se eliminó el material con código " + String.valueOf(code) + ".");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Sucedio un error al eliminar el material. Por favor contactar con el administrador");
+        }
+        
+        return response;
     }
 }

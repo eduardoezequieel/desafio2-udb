@@ -48,6 +48,42 @@ public class CtrlCDs {
         return genders;
     }
     
+    public Cd getCd(String code) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        Cd cd = new Cd();
+        
+        try {
+            String sql = "SELECT codigo, titulo, creador_id, genero_id, duracion, numero_canciones, unidades, tipo_material_id FROM material WHERE codigo = ?";
+            
+            PreparedStatement pst = cn.prepareStatement(sql);
+            pst.setString(1, code);
+            ResultSet rs = pst.executeQuery();
+            
+            while (rs.next()) {            
+                cd.setCodigo(rs.getString("codigo"));
+                cd.setTitulo(rs.getString("titulo"));
+                cd.setArtistId(rs.getInt("creador_id"));
+                cd.setGeneroId(rs.getInt("genero_id"));
+                cd.setDuracion(rs.getString("duracion"));
+                cd.setNumero_canciones(rs.getInt("numero_canciones"));
+                cd.setUnidades(rs.getInt("unidades"));
+                cd.setTipoMaterialId(rs.getInt("tipo_material_id"));
+            }
+            
+            pst.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: El registro de CD se obtuvo correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener la revista. Contacta con el administrador.");
+        }
+        
+        return cd;
+    }
+    
     public boolean createCd(Cd cd) {
         DatabaseConnection dbcn = new DatabaseConnection();
         Connection cn = dbcn.getConnection();
@@ -71,10 +107,43 @@ public class CtrlCDs {
             pst.close();
             cn.close();
             
-            log.info("INFO: Se creo el libro correctamente.");
+            log.info("INFO: Se creo el CD correctamente.");
         } catch (Exception e) {
             log.error("ERROR: " + e.getMessage());
             JOptionPane.showMessageDialog(null, "Sucedio un error al guardar el registro. Por favor contactar con el administrador.");
+        }
+        
+        return response;
+    }
+    
+    public boolean updateCd(Cd cd) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        boolean response = false;
+        
+        try {
+            String sql = "UPDATE material SET titulo = ?, creador_id = ?, genero_id = ?, duracion = ?, numero_canciones = ?, unidades = ?, tipo_material_id = ? WHERE codigo = ?";
+            
+            PreparedStatement pst = cn.prepareStatement(sql);
+            
+            pst.setString(1, cd.getTitulo());
+            pst.setInt(2, cd.getArtistId());
+            pst.setInt(3, cd.getGeneroId());
+            pst.setString(4, cd.getDuracion());
+            pst.setInt(5, cd.getNumero_canciones());
+            pst.setInt(6, cd.getUnidades());
+            pst.setInt(7, cd.getTipoMaterialId());
+            pst.setString(8, cd.getCodigo());
+            
+            if(!pst.execute()) response = true;
+            
+            pst.close();
+            cn.close();
+            
+            log.info("INFO: Se actualizó el CD correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Sucedio un error al actualizar el registro. Por favor contactar con el administrador.");
         }
         
         return response;

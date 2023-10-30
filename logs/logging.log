@@ -415,3 +415,558 @@
 2023-10-29 20:23:57 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
 2023-10-29 20:24:00 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
 2023-10-29 20:24:00 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:04 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:06 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 20:26:06 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:22 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 20:26:22 INFO  CtrlDVDs:73 - INFO: Se creo el DVD correctamente.
+2023-10-29 20:26:22 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:28 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 20:26:28 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:48 INFO  CtrlAuthors:204 - INFO: Se creo el autor correctamente.
+2023-10-29 20:26:48 INFO  CtrlAuthors:143 - INFO: El registro se obtuvo correctamente.
+2023-10-29 20:26:48 INFO  GenerateCode:69 - INFO: Se obtuvo el ultimo codigo asignado correctamente.
+2023-10-29 20:26:48 INFO  CtrlDVDs:73 - INFO: Se creo el DVD correctamente.
+2023-10-29 20:26:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:52 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:26:52 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 20:26:59 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:45:32 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:45:34 ERROR CtrlBooks:83 - ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1
+2023-10-29 20:46:08 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:46:10 ERROR CtrlBooks:83 - ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1
+2023-10-29 20:47:00 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:47:01 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:49:56 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:49:57 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:51:53 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:51:55 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:53:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:53:45 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:54:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:54:44 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:59:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 20:59:49 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:59:49 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 20:59:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:09 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:10 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:10 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:10 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:16 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:16 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:16 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:16 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:16 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:16 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:32 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:32 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:32 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:32 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:32 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:32 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:33 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:33 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:33 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:34 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:35 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:35 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:35 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:36 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:37 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:37 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:37 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:05:37 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:37 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:05:37 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:06:18 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:06:20 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:20 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:20 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:06:23 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:24 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:06:25 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:25 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:06:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:10:56 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:11:03 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:11:03 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:11:03 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:28 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:33 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:33 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:33 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:36 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 21:20:37 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:39 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:39 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:39 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:42 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 21:20:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:44 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:44 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:44 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:48 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 21:20:49 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:20:50 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:50 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:20:50 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:22:37 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:22:39 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:39 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:39 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:40 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:22:41 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:41 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:22:41 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:23:59 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 21:24:01 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:24:02 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:24:02 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:24:02 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:24:44 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:24:44 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 21:25:15 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:18 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:27 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:27 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:28 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:28 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:28 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:29 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:29 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:29 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:32 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:33 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:33 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:33 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:33 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:33 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:37 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:37 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:25:37 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:25:39 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 21:25:41 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:40:02 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:40:04 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:07 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:08 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:11 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:52:11 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:52:11 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:52:11 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:52:11 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 21:52:11 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:52:12 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:13 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:13 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:13 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:52:29 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:52:31 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:53:38 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:53:39 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:53:39 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:53:39 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:53:48 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:53:48 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:53:48 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:59:43 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:59:45 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:59:45 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:59:45 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:59:46 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:59:46 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:59:46 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:59:48 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:59:48 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:59:48 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:59:48 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:59:48 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:59:48 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 21:59:49 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 21:59:49 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 21:59:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:14 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:14 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:17 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 22:00:18 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:20 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:20 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:20 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:20 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:20 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:20 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:22 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:22 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:22 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:23 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:23 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:23 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:25 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:25 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:25 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:25 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:25 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:26 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:00:26 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:00:26 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:26 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:27 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:43 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 22:00:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:00:45 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:45 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:00:45 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:01:09 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:01:09 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:01:09 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:01:10 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:01:10 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:01:10 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:01:13 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:01:13 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:01:13 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:01:14 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:01:14 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:01:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:01:16 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:01:16 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:01:16 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:01:16 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:01:16 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:01:16 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:03:14 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:03:17 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:03:17 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:03:17 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:03:17 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:03:17 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:03:17 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:03:17 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:03:17 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:03:17 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:03:18 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:03:18 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:03:18 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:04:48 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:04:50 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:04:50 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:04:50 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:08:17 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:08:18 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:08:18 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-29 22:08:20 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:08:21 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:08:21 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:08:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:09:18 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:09:20 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:09:20 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:09:20 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:09:55 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:09:57 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:09:57 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:09:57 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:11:04 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:11:06 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:11:06 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:11:06 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:12:34 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:12:36 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:12:36 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:12:36 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:21 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:22 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:23 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:23 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:23 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:18:25 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:25 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:26 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:26 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:26 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:26 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:26 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:27 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:27 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:30 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:18:31 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:32 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:32 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:32 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:36 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:18:37 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:37 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:37 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:37 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:38 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:38 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:38 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:43 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:18:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:44 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:44 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:44 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:45 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:45 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:45 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:46 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:18:47 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:18:48 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:18:48 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:18:48 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:08 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:09 INFO  CtrlCDs:78 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:35:09 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:35:09 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:14 INFO  CtrlCDs:78 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:35:14 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:35:14 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:15 INFO  CtrlCDs:78 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:35:15 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:35:15 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:16 INFO  CtrlCDs:78 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:35:16 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:35:16 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:16 INFO  CtrlCDs:78 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:35:16 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:35:16 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:35:17 INFO  CtrlCDs:78 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:35:17 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:35:17 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:43:13 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:43:15 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:43:15 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:43:15 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:07 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:10 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:44:10 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:44:10 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:17 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:44:17 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 22:44:17 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:19 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-29 22:44:20 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:21 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:44:21 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:44:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:22 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:44:23 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:24 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:44:24 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:44:24 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:27 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 22:44:27 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 22:44:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:44:28 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-29 22:44:29 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:13 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:15 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:45:15 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:45:15 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:17 INFO  CtrlCDs:143 - INFO: Se actualizó el CD correctamente.
+2023-10-29 22:45:21 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:22 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:45:22 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:45:22 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:29 INFO  CtrlCDs:143 - INFO: Se actualizó el CD correctamente.
+2023-10-29 22:45:31 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:32 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:45:32 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:45:32 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:34 INFO  CtrlCDs:143 - INFO: Se actualizó el CD correctamente.
+2023-10-29 22:45:35 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:36 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:45:36 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:45:36 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:36 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:45:36 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-29 22:45:36 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:45:42 INFO  CtrlCDs:143 - INFO: Se actualizó el CD correctamente.
+2023-10-29 22:45:45 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:54:25 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:54:27 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:54:27 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:54:27 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:54:51 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:54:52 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:54:52 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:54:52 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:11 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:13 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:13 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:13 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:13 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:13 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:13 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:14 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:14 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:14 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:15 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:15 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:15 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:15 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:15 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:15 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:16 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:16 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:16 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:16 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:17 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:17 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:18 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:18 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:18 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:19 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:19 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:19 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:19 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:19 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:19 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:19 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:19 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:19 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:41 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:43 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:43 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:43 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:44 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:44 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:44 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:55:44 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:55:44 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:55:44 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:22 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:26 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:58:26 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:58:26 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:46 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:47 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:58:47 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:58:47 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:50 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 22:58:51 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:52 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:58:52 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:58:52 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:58:58 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 22:58:59 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:01 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:01 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:01 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:02 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:02 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:02 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:03 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:03 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:03 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:03 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:04 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:04 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:04 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:04 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:04 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:04 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:04 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:04 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:05 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:05 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:05 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:07 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:07 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:07 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:07 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:07 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:07 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:08 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:08 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:08 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:08 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:08 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:08 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:09 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:09 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:09 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:35 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 22:59:36 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:37 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:37 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:37 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:43 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 22:59:44 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:45 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:45 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:45 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:51 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 22:59:51 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:52 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:52 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:52 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:52 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:52 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:52 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:53 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:53 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:53 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:53 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:53 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:53 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:54 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:54 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:54 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:56 INFO  CtrlDVDs:138 - INFO: Se actualizó el DVD correctamente.
+2023-10-29 22:59:57 INFO  CtrlMaterials:48 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:58 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:58 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:58 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 22:59:59 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-29 22:59:59 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-29 22:59:59 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:02:04 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:02:07 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:02:07 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:02:07 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:02:13 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-29 23:02:13 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-29 23:02:13 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:02:14 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:02:14 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-29 23:02:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-29 23:02:16 INFO  CtrlMaterials:75 - INFO: Se eliminó el material con código LIB00007.
+2023-10-29 23:02:16 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.

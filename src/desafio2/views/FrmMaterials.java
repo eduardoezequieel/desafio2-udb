@@ -1,10 +1,20 @@
 package desafio2.views;
 
+import desafio2.controllers.CtrlBooks;
+import desafio2.controllers.CtrlCDs;
+import desafio2.controllers.CtrlDVDs;
+import desafio2.controllers.CtrlMagazines;
 import desafio2.controllers.CtrlMaterials;
+import desafio2.helpers.GenerateCode;
+import desafio2.models.Book;
+import desafio2.models.Cd;
+import desafio2.models.Dvd;
+import desafio2.models.Magazine;
 import desafio2.models.Material;
 import java.awt.BorderLayout;
 import java.util.List;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -15,6 +25,10 @@ public class FrmMaterials extends javax.swing.JPanel {
     private CtrlMaterials controller;
     private List<Material> materials;
     private Material selectedMaterial = null;
+    private CtrlBooks bookController;
+    private CtrlMagazines magazineController;
+    private CtrlCDs cdsController;
+    private CtrlDVDs dvdsController;
     private JPanel layoutPanel;
    
     public FrmMaterials(JPanel contentPanel) {
@@ -23,6 +37,11 @@ public class FrmMaterials extends javax.swing.JPanel {
         getTableData();
         
         layoutPanel = contentPanel;
+        
+        bookController = new CtrlBooks();
+        magazineController = new CtrlMagazines();
+        cdsController = new CtrlCDs();
+        dvdsController = new CtrlDVDs();
     }
     
     private void initData() {
@@ -49,6 +68,134 @@ public class FrmMaterials extends javax.swing.JPanel {
         layoutPanel.add(content, BorderLayout.CENTER);
         layoutPanel.revalidate();
         layoutPanel.repaint();
+    }
+    
+    private void updateBook() {
+        Book book = (Book)selectedMaterial;
+        
+        boolean validated = true;
+        String[] fields = {book.getTitulo(), book.getIsbn(), String.valueOf(book.getNumPaginas()), String.valueOf(book.getAnioPublicacion()), String.valueOf(book.getUnidades())};
+        
+        for (int i = 0; i < fields.length; i++) {
+            if (fields[i].length() == 0) {
+                validated = false;
+                break;
+            }
+        }
+        
+        if (!validated) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+            return;
+        }
+        
+        if(book.getCreadorId() == 0 || book.getEditorialId() == 0) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+        }
+        
+        boolean ok = bookController.updateBook(book);
+        
+        if(!ok) return;
+        
+        JOptionPane.showMessageDialog(null, "Material actualizado exitosamente");
+        
+        initData();
+        getTableData();
+    }
+    
+    private void updateMagazine() {
+        Magazine magazine = (Magazine)selectedMaterial;
+        
+        boolean validated = true;
+        String[] fields = {magazine.getTitulo(), String.valueOf(magazine.getUnidades()), magazine.getFechaPublicacion()};
+        
+        for (int i = 0; i < fields.length; i++) {
+            if (fields[i].length() == 0) {
+                validated = false;
+                break;
+            }
+        }
+        
+        if (!validated) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+            return;
+        }
+        
+        if(magazine.getPeriodicidadId()== 0 || magazine.getEditorialId() == 0) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+        }
+        
+        boolean ok = magazineController.updateMagazine(magazine);
+        
+        if(!ok) return;
+        
+        JOptionPane.showMessageDialog(null, "Material actualizado exitosamente");
+        
+        initData();
+        getTableData();
+    }
+    
+    private void updateCd() {
+        Cd cd = (Cd)selectedMaterial;
+        
+        boolean validated = true;
+        String[] fields = {cd.getTitulo(), String.valueOf(cd.getUnidades()), String.valueOf(cd.getNumero_canciones()), cd.getDuracion()};
+        
+        for (int i = 0; i < fields.length; i++) {
+            if (fields[i].length() == 0) {
+                validated = false;
+                break;
+            }
+        }
+        
+        if (!validated) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+            return;
+        }
+        
+        if(cd.getGeneroId()== 0 || cd.getArtistId()== 0) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+        }
+        
+        boolean ok = cdsController.updateCd(cd);
+        
+        if(!ok) return;
+        
+        JOptionPane.showMessageDialog(null, "Material actualizado exitosamente");
+        
+        initData();
+        getTableData();
+    }
+    
+    private void updateDvd() {
+        Dvd dvd = (Dvd)selectedMaterial;
+        
+        boolean validated = true;
+        String[] fields = {dvd.getTitulo(), dvd.getDuracion()};
+        
+        for (int i = 0; i < fields.length; i++) {
+            if (fields[i].length() == 0) {
+                validated = false;
+                break;
+            }
+        }
+        
+        if (!validated) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+            return;
+        }
+        
+        if(dvd.getGeneroId()== 0 || dvd.getCreadorId()== 0) {
+            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
+        }
+        
+        boolean ok = dvdsController.updateDvd(dvd);
+        
+        if(!ok) return;
+        
+        JOptionPane.showMessageDialog(null, "Material actualizado exitosamente");
+        
+        initData();
+        getTableData();
     }
     
     private void getTableData() {
@@ -215,40 +362,48 @@ public class FrmMaterials extends javax.swing.JPanel {
         deleteBtn.setEnabled(true);
         
         if (selectedMaterial.getTipoMaterial().equals("Libro")) {
-            FrmEditBooks form = new FrmEditBooks();
+            Book book = bookController.getBook(selectedMaterial.getCodigo());
+            selectedMaterial = book;
+            
+            FrmEditBooks form = new FrmEditBooks((Book)selectedMaterial);
             setContent(form);
         } else if (selectedMaterial.getTipoMaterial().equals("Revista")) {
-            FrmEditMagazine form = new FrmEditMagazine();
+            Magazine magazine = magazineController.getMagazine(selectedMaterial.getCodigo());
+            selectedMaterial = magazine;
+            
+            FrmEditMagazine form = new FrmEditMagazine((Magazine) selectedMaterial);
             setContent(form);
         } else if (selectedMaterial.getTipoMaterial().equals("CD")) {
-            FrmEditCDs form = new FrmEditCDs();
+            Cd cd = cdsController.getCd(selectedMaterial.getCodigo());
+            selectedMaterial = cd;
+            
+            FrmEditCDs form = new FrmEditCDs((Cd)selectedMaterial);
             setContent(form);
         } else if (selectedMaterial.getTipoMaterial().equals("DVD")) {
-            FrmEditDVDs form = new FrmEditDVDs();
+            Dvd dvd = dvdsController.getDvd(selectedMaterial.getCodigo());
+            selectedMaterial = dvd;
+            
+            FrmEditDVDs form = new FrmEditDVDs((Dvd)selectedMaterial);
             setContent(form);
         }
     }//GEN-LAST:event_materialTblMouseClicked
 
     private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
-        /*int response = JOptionPane.showConfirmDialog(null, 
-                "¿Estás seguro de que deseas eliminar este registro? Todos los datos relacionados a el se seran eliminados. Este cambio es irreversible", 
+        int response = JOptionPane.showConfirmDialog(null, 
+                "¿Estás seguro de que deseas eliminar este registro? Este cambio es irreversible", 
                 "Confirmación", 
                 JOptionPane.YES_NO_OPTION, 
                 JOptionPane.WARNING_MESSAGE);
         
         if (response == JOptionPane.YES_OPTION) {
-            int id = selectedEditorial.getId();
-            boolean relatedMaterialsWereDeleted = controller.deleteRelatedMaterials(id);
-            
-            if(relatedMaterialsWereDeleted) {
-                boolean editorialWasDeleted = controller.deleteEditorial(id);
+            String id = selectedMaterial.getCodigo();
+            boolean editorialWasDeleted = controller.deleteMaterial(id);
                 
-                if(editorialWasDeleted) {
-                    initData();
-                    getTableData();
-                }
+            if(editorialWasDeleted) {
+                initData();
+                getTableData();
             }
-        }*/
+        }
     }//GEN-LAST:event_deleteBtnActionPerformed
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
@@ -257,19 +412,10 @@ public class FrmMaterials extends javax.swing.JPanel {
     }//GEN-LAST:event_addBtnActionPerformed
 
     private void updateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBtnActionPerformed
-        /*String editorial = editorialTxt.getText().trim();
-        
-        if(editorial.length() == 0) {
-            JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
-            return;
-        }
-        
-        int id = selectedEditorial.getId();
-        boolean ok = controller.updateEditorial(editorial, id);
-        if(ok) {
-            initData();
-            getTableData();
-        };*/
+        if(selectedMaterial.getTipoMaterialId() == 1) updateBook();
+        if(selectedMaterial.getTipoMaterialId() == 2) updateMagazine();
+        if(selectedMaterial.getTipoMaterialId() == 3) updateCd();
+        if(selectedMaterial.getTipoMaterialId() == 4) updateDvd();
     }//GEN-LAST:event_updateBtnActionPerformed
 
     private void searchTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchTxtKeyReleased

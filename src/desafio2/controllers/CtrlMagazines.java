@@ -51,6 +51,41 @@ public class CtrlMagazines {
         return periodicities;
     }
     
+    public Magazine getMagazine(String code) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        Magazine magazine = new Magazine();
+        
+        try {
+            String sql = "SELECT codigo, titulo, periodicidad_id, fecha_publicacion, unidades, tipo_material_id, editorial_id FROM material WHERE codigo = ?";
+            
+            PreparedStatement pst = cn.prepareStatement(sql);
+            pst.setString(1, code);
+            ResultSet rs = pst.executeQuery();
+            
+            while (rs.next()) {            
+                magazine.setCodigo(rs.getString("codigo"));
+                magazine.setTitulo(rs.getString("titulo"));
+                magazine.setPeriodicidadId(rs.getInt("periodicidad_id"));
+                magazine.setFechaPublicacion(rs.getString("fecha_publicacion"));
+                magazine.setUnidades(rs.getInt("unidades"));
+                magazine.setTipoMaterialId(rs.getInt("tipo_material_id"));
+                magazine.setEditorialId(rs.getInt("editorial_id"));
+            }
+            
+            pst.close();
+            rs.close();
+            cn.close();
+            
+            log.info("INFO: El registro de revista se obtuvo correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Hubo un problema al obtener la revista. Contacta con el administrador.");
+        }
+        
+        return magazine;
+    }
+    
     public boolean createMagazine(Magazine magazine) {
         DatabaseConnection dbcn = new DatabaseConnection();
         Connection cn = dbcn.getConnection();
@@ -77,6 +112,37 @@ public class CtrlMagazines {
         } catch (Exception e) {
             log.error("ERROR: " + e.getMessage());
             JOptionPane.showMessageDialog(null, "Sucedio un error al guardar el registro. Por favor contactar con el administrador.");
+        }
+        
+        return response;
+    }
+    
+     public boolean updateMagazine(Magazine magazine) {
+        DatabaseConnection dbcn = new DatabaseConnection();
+        Connection cn = dbcn.getConnection();
+        boolean response = false;
+        
+        try {
+            String sql = "UPDATE material SET titulo = ?, periodicidad_id = ?, fecha_publicacion = ?, unidades = ?, tipo_material_id = ?, editorial_id = ? WHERE codigo = ?";
+            PreparedStatement pst = cn.prepareStatement(sql);
+            
+            pst.setString(1, magazine.getTitulo());
+            pst.setInt(2, magazine.getPeriodicidadId());
+            pst.setString(3, magazine.getFechaPublicacion());
+            pst.setInt(4, magazine.getUnidades());
+            pst.setInt(5, magazine.getTipoMaterialId());
+            pst.setInt(6, magazine.getEditorialId());
+            pst.setString(7, magazine.getCodigo());
+            
+            if(!pst.execute()) response = true;
+            
+            pst.close();
+            cn.close();
+            
+            log.info("INFO: Se actualizó la revista correctamente.");
+        } catch (Exception e) {
+            log.error("ERROR: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Sucedio un error al actualizar el registro. Por favor contactar con el administrador.");
         }
         
         return response;

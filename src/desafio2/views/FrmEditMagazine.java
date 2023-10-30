@@ -1,22 +1,97 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package desafio2.views;
 
-/**
- *
- * @author Eduardo
- */
-public class FrmEditMagazine extends javax.swing.JPanel {
+import desafio2.controllers.CtrlAuthors;
+import desafio2.controllers.CtrlBooks;
+import desafio2.controllers.CtrlEditorials;
+import desafio2.controllers.CtrlMagazines;
+import desafio2.helpers.Validators;
+import desafio2.models.Editorial;
+import desafio2.models.Magazine;
+import desafio2.models.Periodicity;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import javax.swing.JOptionPane;
 
-    /**
-     * Creates new form FrmBooks
-     */
-    public FrmEditMagazine() {
+public class FrmEditMagazine extends javax.swing.JPanel {
+    private Magazine selectedMagazine;
+    private CtrlEditorials editorialsController;
+    private List<Editorial> editorials;
+    
+    private CtrlMagazines magazinesController;
+    private List<Periodicity> periodicities;
+    
+    public FrmEditMagazine(Magazine magazine) {
         initComponents();
+        
+        selectedMagazine = magazine;
+        initData();
+        Validators.allowNumbers(unidadesTxt, 5);
+        
+        editorialsController = new CtrlEditorials();
+        magazinesController = new CtrlMagazines();
+        getPeriodicity();
+        getEditorials();
     }
+    
+    private void initData() {
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        
+            Date date = sdf.parse(selectedMagazine.getFechaPublicacion());
+            fechaDc.setDate(date);
+
+            tituloTxt.setText(selectedMagazine.getTitulo());
+
+            unidadesTxt.setText(String.valueOf(selectedMagazine.getUnidades()));
+            codeLbl.setText(selectedMagazine.getCodigo());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Hubo un problema al cargar la fecha del registro.");
+        }
+    }
+    
+    private void getPeriodicity() {
+        periodicities = magazinesController.getPeriodicites();
+        
+        periodicityCb.removeAllItems();
+        periodicityCb.addItem("Selecciona la periodicidad");
+        
+        for (int i = 0; i < periodicities.size(); i++) {
+            Periodicity periodicity = periodicities.get(i);
+            
+            periodicityCb.addItem(periodicity.getPeriodicidad());
+        }
+        
+        for (int i = 0; i < periodicities.size(); i++) {
+            if (selectedMagazine.getPeriodicidadId()== periodicities.get(i).getId()) {
+                periodicityCb.setSelectedItem(periodicities.get(i).getPeriodicidad());
+                break;
+            }
+        }
+    }
+    
+     private void getEditorials() {
+        editorials = editorialsController.getEditorials();
+        
+        editorialCb.removeAllItems();
+        editorialCb.addItem("Selecciona una editorial");
+        
+        for (int i = 0; i < editorials.size(); i++) {
+            Editorial editorial = editorials.get(i);
+            
+            editorialCb.addItem(editorial.getEditorial());
+        }
+        
+        for (int i = 0; i < editorials.size(); i++) {
+            if (selectedMagazine.getEditorialId()== editorials.get(i).getId()) {
+                editorialCb.setSelectedItem(editorials.get(i).getEditorial());
+                break;
+            }
+        }
+    }
+     
+     
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -28,16 +103,18 @@ public class FrmEditMagazine extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        tituloTxt = new javax.swing.JTextField();
+        codeLbl = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        editorialCb = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        unidadesTxt = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        periodicityCb = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        fechaDc = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(0, 0, 0));
         setMaximumSize(new java.awt.Dimension(515, 585));
@@ -51,74 +128,180 @@ public class FrmEditMagazine extends javax.swing.JPanel {
         jPanel1.setPreferredSize(new java.awt.Dimension(515, 585));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 480, 30));
+        tituloTxt.setBackground(new java.awt.Color(255, 255, 255));
+        tituloTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        tituloTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        tituloTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tituloTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(tituloTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 480, 30));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setText("Título:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        codeLbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        codeLbl.setForeground(new java.awt.Color(102, 102, 102));
+        codeLbl.setText("REV00000");
+        jPanel1.add(codeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("Editorial:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 480, 30));
+        editorialCb.setBackground(new java.awt.Color(255, 255, 255));
+        editorialCb.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        editorialCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        editorialCb.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        editorialCb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editorialCbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(editorialCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 480, 30));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("Unidades disponibles:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jTextField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 480, 30));
+        unidadesTxt.setBackground(new java.awt.Color(255, 255, 255));
+        unidadesTxt.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        unidadesTxt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        unidadesTxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                unidadesTxtKeyReleased(evt);
+            }
+        });
+        jPanel1.add(unidadesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 480, 30));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel8.setText("Periodicidad:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
-
-        jComboBox3.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox3.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 480, 30));
-
-        jComboBox4.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox4.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
-        jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 480, 30));
+        jLabel8.setText("Título:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel9.setText("Fecha de publicación:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+        jLabel9.setText("Código:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel1.setText("Periodicidad:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 80, -1));
+
+        periodicityCb.setBackground(new java.awt.Color(255, 255, 255));
+        periodicityCb.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        periodicityCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        periodicityCb.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        periodicityCb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                periodicityCbActionPerformed(evt);
+            }
+        });
+        jPanel1.add(periodicityCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 480, 30));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel6.setText("Fecha de publicación:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 130, -1));
+
+        fechaDc.setBackground(new java.awt.Color(255, 255, 255));
+        fechaDc.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 204), 1, true));
+        fechaDc.setDateFormatString("yyyy-MM-dd");
+        fechaDc.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        fechaDc.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                fechaDcFocusLost(evt);
+            }
+        });
+        fechaDc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                fechaDcMouseExited(evt);
+            }
+        });
+        fechaDc.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+            }
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+                fechaDcInputMethodTextChanged(evt);
+            }
+        });
+        fechaDc.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                fechaDcPropertyChange(evt);
+            }
+        });
+        jPanel1.add(fechaDc, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 480, 30));
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tituloTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tituloTxtKeyReleased
+        String text = tituloTxt.getText();
+        boolean validLength = Validators.checkTextLength(text, 100);
+        boolean validFormat = Validators.matchesRegex(text, Validators.getNoMaliciousCharactersRegex());
+        
+        if(!validLength) tituloTxt.setText(text.substring(0, 100));
+        if (!validFormat) tituloTxt.setText(text.substring(0, text.length() - 1));
+        
+        selectedMagazine.setTitulo(tituloTxt.getText());
+    }//GEN-LAST:event_tituloTxtKeyReleased
+
+    private void unidadesTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_unidadesTxtKeyReleased
+        selectedMagazine.setUnidades(Integer.parseInt(unidadesTxt.getText()));
+    }//GEN-LAST:event_unidadesTxtKeyReleased
+
+    private void editorialCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editorialCbActionPerformed
+        for (int i = 0; i < editorials.size(); i++) {
+            if(editorials.get(i).getEditorial().equals(editorialCb.getSelectedItem())) {
+                selectedMagazine.setEditorialId(editorials.get(i).getId());
+                break;
+            }
+        }
+    }//GEN-LAST:event_editorialCbActionPerformed
+
+    private void periodicityCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_periodicityCbActionPerformed
+        for (int i = 0; i < periodicities.size(); i++) {
+            if(periodicities.get(i).getPeriodicidad().equals(periodicityCb.getSelectedItem())) {
+                selectedMagazine.setPeriodicidadId(periodicities.get(i).getId());
+                break;
+            }
+        }
+    }//GEN-LAST:event_periodicityCbActionPerformed
+
+    private void fechaDcPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_fechaDcPropertyChange
+        if ("date".equals(evt.getPropertyName())) {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            selectedMagazine.setFechaPublicacion(sdf.format(fechaDc.getDate()));
+        }
+    }//GEN-LAST:event_fechaDcPropertyChange
+
+    private void fechaDcMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fechaDcMouseExited
+        
+    }//GEN-LAST:event_fechaDcMouseExited
+
+    private void fechaDcFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fechaDcFocusLost
+        
+    }//GEN-LAST:event_fechaDcFocusLost
+
+    private void fechaDcInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_fechaDcInputMethodTextChanged
+        
+    }//GEN-LAST:event_fechaDcInputMethodTextChanged
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel codeLbl;
+    private javax.swing.JComboBox<String> editorialCb;
+    private com.toedter.calendar.JDateChooser fechaDc;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JComboBox<String> periodicityCb;
+    private javax.swing.JTextField tituloTxt;
+    private javax.swing.JTextField unidadesTxt;
     // End of variables declaration//GEN-END:variables
 }
