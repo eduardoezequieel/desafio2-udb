@@ -294,21 +294,21 @@ public class FrmAuthors extends javax.swing.JPanel {
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
         Author author = new Author();
-        int id = 0;
+        int creatorTypeId = 0;
         
-        for (Author a : authors) {
+        for (AuthorType a : types) {
             if (a.getTipoCreador().equals(creatorTypeCb.getSelectedItem())) {
-                id = a.getId();
+                creatorTypeId = a.getId();
                 break;
             }
         }
         
-        if(id != 0) {
+        if(creatorTypeId != 0) {
             String creator = creatorTxt.getText().trim();
             
             author.setId(0);
             author.setNombre(creator);
-            author.setTipoCreadorId(id);
+            author.setTipoCreadorId(creatorTypeId);
 
             if(creator.length() == 0) {
                 JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");
@@ -329,21 +329,21 @@ public class FrmAuthors extends javax.swing.JPanel {
 
     private void updateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBtnActionPerformed
         Author author = new Author();
-        int id = 0;
+        int creatorTypeId = 0;
         
-        for (Author a : authors) {
+        for (AuthorType a : types) {
             if (a.getTipoCreador().equals(creatorTypeCb.getSelectedItem())) {
-                id = a.getId();
+                creatorTypeId = a.getId();
                 break;
             }
         }
         
-        if(id != 0) {
+        if(creatorTypeId != 0) {
             String creator = creatorTxt.getText().trim();
             
             author.setId(selectedAuthor.getId());
             author.setNombre(creator);
-            author.setTipoCreadorId(id);
+            author.setTipoCreadorId(creatorTypeId);
 
             if(creator.length() == 0) {
                 JOptionPane.showMessageDialog(null, "No se permiten campos vacios.");

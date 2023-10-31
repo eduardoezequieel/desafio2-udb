@@ -1331,3 +1331,194 @@
 2023-10-29 23:21:25 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
 2023-10-29 23:21:27 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
 2023-10-29 23:21:27 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 22:15:03 ERROR CtrlMaterials:51 - ERROR: null
+2023-10-30 22:15:39 ERROR CtrlMaterials:51 - ERROR: null
+2023-10-30 22:16:09 ERROR CtrlMaterials:51 - ERROR: null
+2023-10-30 22:31:01 ERROR CtrlMaterials:51 - ERROR: null
+2023-10-30 22:41:29 ERROR CtrlMaterials:51 - ERROR: null
+2023-10-30 22:50:50 ERROR CtrlMaterials:51 - ERROR: null
+2023-10-30 22:51:16 ERROR CtrlBooks:46 - ERROR: null
+2023-10-30 22:51:18 ERROR CtrlEditorials:45 - ERROR: null
+2023-10-30 22:57:09 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:57:19 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 22:57:19 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-30 22:57:19 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:57:32 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:57:32 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 22:57:55 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:59:51 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:59:53 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 22:59:53 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-30 22:59:53 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:59:54 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 22:59:54 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-30 22:59:54 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 22:59:55 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 22:59:55 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 22:59:55 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:25 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:27 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:01:27 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:01:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:27 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:01:27 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:01:27 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:28 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:01:28 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:01:28 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:28 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:01:28 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-30 23:01:28 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:48 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:50 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:01:50 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:01:50 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:50 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:01:50 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:01:50 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:52 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:01:52 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:01:55 ERROR CtrlAuthors:235 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca_test`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:03:11 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:03:13 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:03:13 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:03:13 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:03:15 INFO  CtrlBooks:146 - INFO: Se actualizó el libro correctamente.
+2023-10-30 23:03:16 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:03:17 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:03:17 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:03:34 ERROR CtrlAuthors:235 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:03:50 ERROR CtrlAuthors:235 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:03:51 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:03:54 INFO  CtrlEditorials:122 - INFO: Se actualizo la editorial con id 5 correctamente.
+2023-10-30 23:03:54 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:03:56 INFO  CtrlEditorials:122 - INFO: Se actualizo la editorial con id 9 correctamente.
+2023-10-30 23:03:56 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:04:01 INFO  CtrlEditorials:122 - INFO: Se actualizo la editorial con id 7 correctamente.
+2023-10-30 23:04:01 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:04:02 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:04:02 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:04:07 ERROR CtrlAuthors:235 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:06:40 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:06:42 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:06:42 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:06:43 ERROR CtrlAuthors:237 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:06:52 ERROR CtrlAuthors:237 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:07:19 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:07:21 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:07:21 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:07:25 ERROR CtrlAuthors:237 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:07:28 INFO  CtrlAuthors:235 - INFO: Se actualizo el autor correctamente.
+2023-10-30 23:07:28 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:07:28 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:07:34 ERROR CtrlAuthors:237 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:08:43 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:08:45 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:08:45 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:08:52 ERROR CtrlAuthors:235 - ERROR: Cannot add or update a child row: a foreign key constraint fails (`mediateca`.`creador`, CONSTRAINT `tipo_creador_fk` FOREIGN KEY (`tipo_creador_id`) REFERENCES `tipo_creador` (`id`))
+2023-10-30 23:11:29 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:31 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:31 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:11:37 INFO  CtrlAuthors:233 - INFO: Se actualizo el autor correctamente.
+2023-10-30 23:11:37 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:37 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:11:45 INFO  CtrlAuthors:233 - INFO: Se actualizo el autor correctamente.
+2023-10-30 23:11:45 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:45 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:11:47 INFO  CtrlAuthors:233 - INFO: Se actualizo el autor correctamente.
+2023-10-30 23:11:47 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:47 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:11:49 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:52 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:52 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:11:53 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:11:54 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:11:54 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-30 23:11:54 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:15 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:17 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:13:17 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-30 23:13:17 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:18 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:13:18 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:13:18 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:18 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:13:18 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:13:18 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:20 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:20 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:13:22 INFO  CtrlAuthors:233 - INFO: Se actualizo el autor correctamente.
+2023-10-30 23:13:22 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:22 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:13:28 INFO  CtrlAuthors:233 - INFO: Se actualizo el autor correctamente.
+2023-10-30 23:13:28 INFO  CtrlAuthors:45 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:13:28 INFO  CtrlAuthors:175 - INFO: Los registros de tipo se obtuvieron correctamente.
+2023-10-30 23:13:32 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:17:12 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:17:13 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:17:13 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:17:13 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:17:14 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:17:14 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:17:14 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:17:16 INFO  CtrlDVDs:77 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:17:16 INFO  CtrlDVDs:43 - INFO: Los registros de generos para DVDs se obtuvieron correctamente.
+2023-10-30 23:17:16 INFO  CtrlAuthors:113 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:19 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:20 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:19:20 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:19:20 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:21 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:19:21 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:19:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:22 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:19:22 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-30 23:19:22 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:45 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:50 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:19:50 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-30 23:19:50 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:51 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:19:51 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:19:51 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:52 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:19:52 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:19:52 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:19:53 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:19:53 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:19:53 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:20:24 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:00 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:01 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:01 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:01 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:07 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:07 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:07 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:08 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:08 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:08 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:08 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:08 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:09 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:09 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:09 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:10 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:10 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:10 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:11 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:11 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:11 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:21:20 INFO  CtrlBooks:81 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:20 INFO  CtrlBooks:44 - INFO: Los registros de autores para libros se obtuvieron correctamente.
+2023-10-30 23:21:20 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:24:19 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:24:20 INFO  CtrlCDs:78 - INFO: El registro de CD se obtuvo correctamente.
+2023-10-30 23:24:20 INFO  CtrlCDs:42 - INFO: Los registros de generos para CDs se obtuvieron correctamente.
+2023-10-30 23:24:20 INFO  CtrlAuthors:79 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:24:21 INFO  CtrlMagazines:80 - INFO: El registro de revista se obtuvo correctamente.
+2023-10-30 23:24:21 INFO  CtrlMagazines:44 - INFO: Los registros de periodicidad se obtuvieron correctamente.
+2023-10-30 23:24:21 INFO  CtrlEditorials:43 - INFO: Los registros se obtuvieron correctamente.
+2023-10-30 23:24:25 INFO  CtrlMagazines:142 - INFO: Se actualizó la revista correctamente.
+2023-10-30 23:24:26 INFO  CtrlMaterials:49 - INFO: Los registros se obtuvieron correctamente.

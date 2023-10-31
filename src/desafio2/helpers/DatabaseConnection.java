@@ -15,10 +15,11 @@ public class DatabaseConnection {
     
     public DatabaseConnection() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(database, user, password);
         } catch (Exception e) {
-            System.err.println(e);
+            System.out.println("No hay conexión");
+            System.err.println(e.getMessage());
         }
     }
     

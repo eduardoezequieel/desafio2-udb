@@ -355,7 +355,28 @@ public class FrmMaterials extends javax.swing.JPanel {
     }//GEN-LAST:event_materialTblComponentShown
 
     private void materialTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_materialTblMouseClicked
-        selectedMaterial = materials.get(materialTbl.getSelectedRow());
+        DefaultTableModel model = (DefaultTableModel) materialTbl.getModel();
+        int selectedRow = materialTbl.getSelectedRow();
+        
+        String code = model.getValueAt(selectedRow, 0).toString();
+        
+        System.out.println(code);
+        
+        int index = -1;
+        
+        for (int i = 0; i < materials.size(); i++) {
+            if(materials.get(i).getCodigo().equals(code)) {
+                index = i;
+                break;
+            }
+        }
+        
+        if(index == -1) {
+            JOptionPane.showMessageDialog(null, "Sucedio un error al seleccionar el registro, contacta con el administrador.");
+            return;
+        }
+        
+        selectedMaterial = materials.get(index);
         
         addBtn.setEnabled(false);
         updateBtn.setEnabled(true);
